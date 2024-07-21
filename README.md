@@ -2,19 +2,22 @@
 
 This repository contains a Graph Neural Network (GNN) model for classifying enzymes and non-enzymes using the TUDataset "protein". The model is implemented in PyTorch Geometric and includes training and testing scripts.
 
-## Folder Structure
+## Dataset
+
+PROTEINS is a dataset of proteins that are classified as enzymes or non-enzymes. This dataset is collected from the TU Dortmund University. The dataset is included at `data/TUDataset/PROTEINS`.
+
+Here is the sample graph representation of a protein:
+
+![Sample Graph](images/graph_representation.png)
+
+## Model
+
+Implemented a GNN which is a Graph Convolutional Network (GCN) followed by a post-message passing layer. Dropout layers and L2 regularization are used to prevent overfitting.
+
+Here are the loss curves and accuracy curves for the final model (`final_protein_gcn_model.pt`):
+
+![Loss and Accuracy Curves](images/loss_accuracy_curves.png)
+
+The `protein_gnn.ipynb` notebook contains the dataset loading, the model's implementation, and the training and evaluation of the model.
 
 
-- `data/TUDataset/PROTEINS/`: Directory containing the dataset.
-- `images/`: Directory containing images related to the project.
-- `.gitignore`: Git ignore file.
-- `final_protein_gcn_model.pt`: The trained GNN model.
-- `protein_gnn.ipynb`: Jupyter notebook containing the GNN implementation, training, and evaluation.
-- `README.md`: This readme file.
-
-## Installation
-
-To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
-
-```bash
-pip install -r requirements.txt
