@@ -19,7 +19,7 @@ Implemented a GNN which is a Graph Convolutional Network (GCN) followed by a pos
 Here are the loss curves and accuracy curves for the final model (`final_protein_gcn_model.pt`):
 
 <p align="center">
-<img src="images/loss_accuracy_curves.png" alt="Loss and Accuracy Curves" width="600"/>
+<img src="images/loss_accuracy_curves.png" alt="Loss and Accuracy Curves" width="640"/>
 </p>
 
 The `protein_gnn.ipynb` notebook contains the dataset loading, the model's implementation, and the training and evaluation of the model.
